@@ -1,0 +1,12 @@
+<div class="row d-flex justify-content-center">
+  <div class="card"
+  style="width: 50rem;margin:20px;padding: 5px;justify-content: center;"
+  *ngFor="let post of Posts">
+    <div class="card-body">
+      <h5 class="card-title title" >{{post.title}}</h5>
+      <p class="card-text">{{post.body}}</p>
+      <a class="link" [routerLink]="[post.id]">Show More </a>
+    </div>
+  </div>
+</div>
+
